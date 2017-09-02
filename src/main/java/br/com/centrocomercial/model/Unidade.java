@@ -4,11 +4,10 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import org.hibernate.annotations.ColumnDefault;
-
 import lombok.Data;
 
 @Entity
+
 @Data
 public class Unidade {
 
@@ -24,8 +23,7 @@ public class Unidade {
 	@Column(length = 45, nullable = false)
 	private String descricao;
 	
-	@Column(length = 2, nullable = true)
-	@ColumnDefault("F")
+	@Column(length = 2, nullable = false)
 	private String flaginativo;
 	
 }
