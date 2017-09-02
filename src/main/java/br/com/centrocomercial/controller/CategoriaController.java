@@ -8,20 +8,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-<<<<<<< HEAD:src/main/java/br/com/centrocomercial/controller/CategoriaProdController.java
-import br.com.centrocomercial.model.CategoriaProd;
-import br.com.centrocomercial.repository.CategoriaProdRepository;
-=======
 import br.com.centrocomercial.model.Categoria;
 import br.com.centrocomercial.repository.CategoriaRepository;
->>>>>>> 2bdb2b28a8888f1a9ff992bb0ae98c926f10b021:src/main/java/br/com/centrocomercial/controller/CategoriaController.java
 
 @Controller
 @RequestMapping("/categoria")
-public class CategoriaProdController {
+public class CategoriaController {
 
 	@Autowired
-	private CategoriaProdRepository categoriaRepository;
+	private CategoriaRepository categoriaRepository;
 
 	// Lista de Editoras
 	@GetMapping("/")
@@ -33,13 +28,13 @@ public class CategoriaProdController {
 	// Chama formulário
 	@GetMapping("/novo")
 	public String novo(Model model) {
-		model.addAttribute("categoria", new CategoriaProd());
+		model.addAttribute("categoria", new Categoria());
 		return "categoria/form";
 	}
 
 	// Salva o formulário
 	@PostMapping("/salvar")
-	public String salvar(CategoriaProd categoria) {
+	public String salvar(Categoria categoria) {
 		categoriaRepository.save(categoria);
 		return "redirect:/categoria/";
 	}
