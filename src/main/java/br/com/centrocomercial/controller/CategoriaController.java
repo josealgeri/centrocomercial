@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.centrocomercial.model.Categoria;
-import br.com.centrocomercial.model.Editora;
 import br.com.centrocomercial.repository.CategoriaRepository;
 
 @Controller
