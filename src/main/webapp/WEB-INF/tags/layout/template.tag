@@ -29,6 +29,7 @@
 		<li><a href="<c:url value="/autor/"/>">Autores</a></li>
 		<li><a href="<c:url value="/editora/"/>">Editoras</a></li>
 		<li><a href="<c:url value="/unidade/"/>">Unidades</a></li>
+		<li><a href="<c:url value="/categoria/"/>">Categorias de Produtos</a></li>
 		<li class="divider"></li>
 		<li><a href="<c:url value="/livro/"/>">Livros</a></li>
 	</ul>
