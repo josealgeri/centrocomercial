@@ -36,6 +36,7 @@
 				<th>Sigla</th>
 				<th>Descrição</th>
 				<th>Ativo</th>
+				
 				<th>Ações</th>
 			</tr>
 		</thead>
@@ -44,7 +45,17 @@
 				<tr>
 					<td>${unidade.sigla}</td>
 					<td>${unidade.descricao}</td>
-					<td>${unidade.flaginativo}</td>
+					<td>
+					<c:if test="${unidade.flaginativo == null }">
+						Ativo
+					</c:if>
+					<c:if test="${unidade.flaginativo != null }">
+						Inativo
+					</c:if>
+
+
+
+</td>
 					<td><a href="<c:url value="/unidade/${unidade.sigla}"/>"><i
 									class="material-icons ">edit</i></a>
 						<a href="<c:url value="/unidade/remover/${unidade.sigla}"/>"><i

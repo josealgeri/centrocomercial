@@ -32,11 +32,24 @@
 						name="descricao" value="${unidade.descricao}" />
 		</div>
 		<div>
+		
+		
+		
+		<p>
+      		<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+      		<label for="filled-in-box">Filled in</label>
+    	</p>
+		
+		
+		
+		
+		
+		
 			<input type="checkbox" class="filled-in" id="flaginativo" value="${unidade.flaginativo}" />
       		<label for="flaginativo">Inativo</label>
 		
 		</div>
-	
+		<p/>
 		
 		<button class="btn waves-effect waves-light" type="reset">Limpar</button>
 		<button class="btn waves-effect waves-light" type="submit">Salvar</button>
