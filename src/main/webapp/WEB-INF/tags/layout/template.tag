@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Bike-shop " />
-<title>.:: Livraria ::.</title>
+<title>.:: Centro Comercial ::.</title>
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
@@ -28,7 +28,7 @@
 	<ul id="dropdown1" class="dropdown-content">
 		<li><a href="<c:url value="/autor/"/>">Autores</a></li>
 		<li><a href="<c:url value="/editora/"/>">Editoras</a></li>
-		<li><a href="<c:url value="/genero/"/>">Gêneros</a></li>
+		<li><a href="<c:url value="/unidade/"/>">Unidades</a></li>
 		<li class="divider"></li>
 		<li><a href="<c:url value="/livro/"/>">Livros</a></li>
 	</ul>
