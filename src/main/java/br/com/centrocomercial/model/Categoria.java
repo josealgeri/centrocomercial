@@ -13,7 +13,7 @@ import lombok.Data;
 public class Categoria {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idcategoria;
 
 	@Column(length = 45, nullable = false)
