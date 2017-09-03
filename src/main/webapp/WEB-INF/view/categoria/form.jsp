@@ -13,39 +13,6 @@
 		<li class="active"><i class="fa fa-edit"></i> Cadastro de Categoria</li>
 	</ol>
 </div>
-
-<!-- 
-  <p />
-		<div class="container">
-		<div class="row">
-			<form class="col s6" id="frm" action="<c:url value="/categoria/salvar" />"
-				method="POST">
-		<div>
-			<label for="id">Código:</label> <input type="text" id="id" name="id"
-						value="${categoria.idcategoria}" readonly />
-		</div>
-		<div>
-			<label for="nome">Descrição:</label> 
-			<input type="text" id="descricao" name="descricao" value="${categoria.descricao}" required/>
-		</div>
-		<div>
-			<input type="checkbox" class="filled-in" id="flaginativo" value="${categoria.flaginativo}" />
-      		<label for="flaginativo">Inativo</label>
-		</div>
-		
-		
-		<button class="btn waves-effect waves-light" type="reset">Limpar</button>
-		<button class="btn waves-effect waves-light" type="submit">Salvar</button>
-	</form>
-	</div>
-	</div>
-
-
-
-
--->
-
-
 <div class="col-md-6">
           <!-- general form elements -->
           <div class="box box-primary">
@@ -74,22 +41,12 @@
                 </div>
               </div>
               <div class="box-footer">
-              <button  class="btn btn-primary">Cancelar</button>
-              <button type="reset" class="btn btn-primary">Limpar</button>
+              	<button type="reset" class="btn btn-primary">Limpar</button>
                 <button type="submit" class="btn btn-primary">Salvar</button>
               </div>
             </form>
           </div>
-          <!-- /.box -->
-          <!-- /.box -->
-
-        
-
-
-
-          <!-- /.box -->
-
-        </div>
+</div>
 
 </jsp:body>
 </layout:template>
