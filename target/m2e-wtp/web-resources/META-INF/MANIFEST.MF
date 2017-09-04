@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: centrocomercial
 Implementation-Version: 1.0
-Built-By: Jose Rodolfo Algeri
+Built-By: jose.algeri
 Implementation-Vendor-Id: br.com.innovangola
 Build-Jdk: 1.8.0_144
 Implementation-URL: http://projects.spring.io/spring-boot/centrocomerc
