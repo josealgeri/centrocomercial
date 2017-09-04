@@ -1,7 +1,5 @@
 package br.com.centrocomercial.controller;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import org.springframework.stereotype.Controller;
@@ -19,9 +17,6 @@ public class IndexController {
 		return "index";
 	}
 
-	@GetMapping("/teste")
-	public String teste() {
-		return "index";
-	}
+
 
 }
