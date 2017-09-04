@@ -27,11 +27,11 @@
 <link rel="stylesheet" href="<c:url value="/static/dist/css/skins/_all-skins.min.css"/>">
 <!-- iCheck -->
 <link rel="stylesheet" href="<c:url value="/static/plugins/iCheck/flat/blue.css"/>">
-<!-- Morris chart -->
-<link rel="stylesheet" href="<c:url value="/static/plugins/morris/morris.css"/>">
-<!-- jvectormap -->
+<!-- Morris chart 
+<link rel="stylesheet" href="<c:url value="/static/plugins/morris/morris.css"/>">-->
+<!-- jvectormap 
 <link rel="stylesheet"
-	href="<c:url value="/static/plugins/jvectormap/jquery-jvectormap-1.2.2.css"/>">
+	href="<c:url value="/static/plugins/jvectormap/jquery-jvectormap-1.2.2.css"/>">-->
 <!-- Date Picker -->
 <link rel="stylesheet" href="<c:url value="/static/plugins/datepicker/datepicker3.css"/>">
 <!-- Daterange picker -->
@@ -238,12 +238,12 @@
 	</script>
 	<!-- Bootstrap 3.3.6 -->
 	<script src="<c:url value="/static/bootstrap/js/bootstrap.min.js"/>"></script>
-	<!-- Morris.js charts -->
+	<!-- Morris.js charts 
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-	<script src="<c:url value="/static/plugins/morris/morris.min.js"/>"></script>
-	<!-- Sparkline -->
-	<script src="<c:url value="/static/plugins/sparkline/jquery.sparkline.min.js"/>"></script>
+	<script src="<c:url value="/static/plugins/morris/morris.min.js"/>"></script>-->
+	<!-- Sparkline 
+	<script src="<c:url value="/static/plugins/sparkline/jquery.sparkline.min.js"/>"></script>-->
 	<!-- jvectormap -->
 	<script src="<c:url value="/static/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"/>"></script>
 	<script src="<c:url value="/static/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"/>"></script>
