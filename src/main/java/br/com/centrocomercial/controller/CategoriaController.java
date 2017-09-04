@@ -35,6 +35,7 @@ public class CategoriaController {
 	// Salva o formulário
 	@PostMapping("/salvar")
 	public String salvar(Categoria categoria) {
+		
 		categoriaRepository.save(categoria);
 		return "redirect:/categoria/";
 	}

@@ -23,8 +23,8 @@
             <form role="form" action="<c:url value="/categoria/salvar" />" method="POST">
               <div class="box-body">
                 <div class="form-group">
-                <label for="id">Código</label> <input type="text" id="id" name="id"
-						value="${categoria.idcategoria}" readonly class="form-control"  />
+                <label for="idCategoria">Código</label> 
+                <input type="text" id="idcategoria" name="idcategoria" value="${categoria.idcategoria}" readonly class="form-control"  />
                 
                 </div>
                 <div class="form-group">
@@ -36,7 +36,6 @@
                 <div class="form-group">
                 <input type="checkbox" class="filled-in" id="flaginativo" value="${categoria.flaginativo}" />
       			<label for="flaginativo">Inativo</label>
-                
                 
                 </div>
               </div>
