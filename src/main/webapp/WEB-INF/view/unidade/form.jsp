@@ -4,9 +4,7 @@
 <%@ taglib tagdir="/WEB-INF/tags/layout" prefix="layout"%>
 <layout:template>
 	<jsp:attribute name="cssEspecificos"></jsp:attribute>
-	<jsp:attribute name="scriptsEspecificos">
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	</jsp:attribute>
+	<jsp:attribute name="scriptsEspecificos"></jsp:attribute>
 	<jsp:body>
 	
 <div>
