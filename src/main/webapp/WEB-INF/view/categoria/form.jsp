@@ -4,45 +4,48 @@
 <%@ taglib tagdir="/WEB-INF/tags/layout" prefix="layout"%>
 <layout:template>
 	<jsp:attribute name="cssEspecificos"></jsp:attribute>
-	<jsp:attribute name="scriptsEspecificos">
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	</jsp:attribute>
-	<jsp:body>
-	
-	<nav>
-    <div class="nav-wrapper">
-      <div class="col s6">
-        <a href="<c:url value="/"/>" class="breadcrumb">Início</a>
-                <a href="<c:url value="/categoria/"/>" class="breadcrumb">Lista de Categorias</a>
-        <a href="#!" class="breadcrumb">Cadastro Categoria de Produtos</a>
-      </div>
-    </div>
-  </nav>
-  <p />
-		<div class="container">
-		<div class="row">
-			<form class="col s6" id="frm" action="<c:url value="/categoria/salvar" />"
-				method="POST">
-		<div>
-			<label for="id">Código:</label> <input type="text" id="id" name="id"
-						value="${categoria.idcategoria}" readonly />
-		</div>
-		<div>
-			<label for="nome">Descrição:</label> <input type="text" id="descricao"
-						name="descricao" value="${categoria.descricao}" />
-		</div>
-		<div>
-			<input type="checkbox" class="filled-in" id="flaginativo" value="${categoria.flaginativo}" />
-      		<label for="flaginativo">Inativo</label>
-		</div>
-		
-		
-		<button class="btn waves-effect waves-light" type="reset">Limpar</button>
-		<button class="btn waves-effect waves-light" type="submit">Salvar</button>
-	</form>
-	</div>
-	</div>
-
+	<jsp:attribute name="scriptsEspecificos"></jsp:attribute>
+<jsp:body>
+<div>
+	<ol class="breadcrumb">
+		<li><a href="/centrocomercial/"><i class="fa fa-home"></i> Início</a></li>
+		<li><a href="/centrocomercial/categoria/"><i class="fa fa-table"></i> Lista de Categorias</a></li>
+		<li class="active"><i class="fa fa-edit"></i> Cadastro de Categoria</li>
+	</ol>
+</div>
+<div class="col-md-6">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form" action="<c:url value="/categoria/salvar" />" method="POST">
+              <div class="box-body">
+                <div class="form-group">
+                <label for="idCategoria">Código</label> 
+                <input type="text" id="idcategoria" name="idcategoria" value="${categoria.idcategoria}" readonly class="form-control"  />
+                
+                </div>
+                <div class="form-group">
+                <label for="nome">Descrição:</label> 
+				<input type="text" id="descricao" name="descricao" value="${categoria.descricao}"
+				placeholder="Descrição da Categoria..." class="form-control" required/>
+                
+                </div>
+                <div class="form-group">
+                <input type="checkbox" class="filled-in" id="flaginativo" value="${categoria.flaginativo}" />
+      			<label for="flaginativo">Inativo</label>
+                
+                </div>
+              </div>
+              <div class="box-footer">
+              	<button type="reset" class="btn btn-primary">Limpar</button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+              </div>
+            </form>
+          </div>
+</div>
 
 </jsp:body>
 </layout:template>

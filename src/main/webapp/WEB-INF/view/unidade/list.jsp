@@ -4,68 +4,47 @@
 <%@ taglib tagdir="/WEB-INF/tags/layout" prefix="layout"%>
 <layout:template>
 	<jsp:attribute name="cssEspecificos"></jsp:attribute>
-	<jsp:attribute name="scriptsEspecificos">
-	
-	 <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet"
-			href="css/materialize.min.css" media="screen,projection" />
-	
-	
-	</jsp:attribute>
-	<jsp:body>
-	
-	<nav>
-    <div class="nav-wrapper">
-      <div class="col s12">
-        <a href="<c:url value="/"/>" class="breadcrumb">Início</a>
-        <a href="#!" class="breadcrumb">Lista de Unidades</a>
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-		<p />
-  <a href="<c:url value="/unidade/novo"/>"
-				class="btn-floating btn-small waves-effect waves-light"><i
-				class="material-icons">add</i></a>
+	<jsp:attribute name="scriptsEspecificos"></jsp:attribute>
 
-
-		<p />
-	<table border="1" class="highlight">
-		<thead>
-			<tr>
-				<th>Sigla</th>
-				<th>Descrição</th>
-				<th>Ativo</th>
-				
-				<th>Ações</th>
-			</tr>
-		</thead>
-		<tbody>
-			<c:forEach var="unidade" items="${unidades}">
-				<tr>
-					<td>${unidade.sigla}</td>
-					<td>${unidade.descricao}</td>
-					<td>
-					<c:if test="${unidade.flaginativo == null }">
-						Ativo
-					</c:if>
-					<c:if test="${unidade.flaginativo != null }">
-						Inativo
-					</c:if>
-
-
-
-</td>
-					<td><a href="<c:url value="/unidade/${unidade.sigla}"/>"><i
-									class="material-icons ">edit</i></a>
-						<a href="<c:url value="/unidade/remover/${unidade.sigla}"/>"><i
-									class="material-icons red-text">delete</i></a></td>
+<jsp:body>
+<div>
+	<ol class="breadcrumb">
+		<li><a href="/centrocomercial/"><i class="fa fa-home"></i> início</a></li>
+		<li class="active"><i class="fa fa-table"></i> Lista de Unidades de Medida</li>
+	</ol>
+</div>
+	<div class="box">
+		<div class="box-header " >
+			<a href="<c:url value="/unidade/novo"/>" class="btn-floating btn-lg waves-effect waves-light" data-toggle="tooltip" title="Novo Registro">
+				<span class="glyphicon glyphicon-plus"></span>
+			</a>
+		</div>
+		<div class="box-body ">
+        	<table id="unidades" class="table table-bordered table-hover "	>
+        	<thead>
+                <tr>
+					<th>Código</th>
+					<th>Descrição</th>
+					<th>Ativo</th>	
+					<th>Ações</th>
 				</tr>
-			</c:forEach>
-		</tbody>
-	</table>
+			</thead>
+            <tbody>
+				<c:forEach var="unidade" items="${unidades}">
+					<tr>
+						<td>${unidade.sigla}</td>
+						<td>${unidade.descricao}</td>
+						<td>${unidade.flaginativo}</td>	
+						<td><a	href="<c:url value="/unidade/${unidade.sigla}"/>" class="btn-floating btn-lg waves-effect waves-light">
+						<span class="glyphicon glyphicon-edit" data-toggle="tooltip" title="Editar Registro"></span></a>
+						<a 	href="<c:url value="/unidade/remover/${unidade.sigla}"/>" class="btn-floating btn-lg waves-effect waves-light">
+						<span class="glyphicon glyphicon-trash" data-toggle="tooltip" title="Apagar Registro"></span></a></td>
+					</tr>
+				</c:forEach>
+			</tbody>
+			</table>
+		</div>
 	</div>
-
 </jsp:body>
 </layout:template>
 

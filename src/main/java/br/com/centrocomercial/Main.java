@@ -15,7 +15,8 @@ public class Main extends SpringBootServletInitializer {
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
 
-		System.out.println("passou no app builder");
+		System.out.println("acesso ao site!!");
+		
 		return builder.sources(Main.class);
 	}
 }
