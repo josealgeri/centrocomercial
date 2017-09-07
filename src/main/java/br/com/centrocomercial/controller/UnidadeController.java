@@ -44,8 +44,6 @@ public class UnidadeController {
 	public String editar(@PathVariable String sigla, Model model) {
 		model.addAttribute("unidade", unidadeRepository.findOneBySigla(sigla).get(0));
 		
-		System.out.println("Sigla: " + unidadeRepository.findOneBySigla(sigla).get(0).getSigla());
-		System.out.println("Flag: " + unidadeRepository.findOneBySigla(sigla).get(0).getFlaginativo());
 		return "unidade/form";
 	}
 
