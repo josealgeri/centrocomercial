@@ -8,8 +8,8 @@
 <jsp:body>
 <div>
 	<ol class="breadcrumb">
-		<li><a href="/"><i class="fa fa-home"></i> Início</a></li>
-		<li><a href="/categoria/"><i class="fa fa-table"></i> Lista de Categorias</a></li>
+		<li><a href="/centrocomercial/"><i class="fa fa-home"></i> Início</a></li>
+		<li><a href="/centrocomercial/categoria/"><i class="fa fa-table"></i> Lista de Categorias</a></li>
 		<li class="active"><i class="fa fa-edit"></i> Cadastro de Categoria</li>
 	</ol>
 </div>

@@ -38,7 +38,7 @@
 
 		<header class="main-header">
 			<!-- Logo -->
-			<a href="/" class="logo"> <!-- mini logo for sidebar mini 50x50 pixels -->
+			<a href="/centrocomercial/" class="logo"> <!-- mini logo for sidebar mini 50x50 pixels -->
 				<span class="logo-mini"><b>C</b>Com</span> <!-- logo for regular state and mobile devices -->
 				<span class="logo-lg"><b>Centro</b>Comercial</span>
 			</a>
@@ -76,7 +76,7 @@
 										<a href="#" class="btn btn-default btn-flat">Configurações</a>
 									</div>
 									<div class="pull-right">
-										<a href="#" class="btn btn-default btn-flat">Sair</a>
+										<a href="/centrocomercial/" class="btn btn-default btn-flat">Sair</a>
 									</div>
 								</li>
 							</ul></li>
@@ -99,7 +99,7 @@
 					</div>
 					<div class="pull-left info">
 						<p>José</p>
-						<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+						<a href="/centrocomercial/"><i class="fa fa-circle text-success"></i> Online</a>
 					</div>
 				</div>
 				<!-- search form -->

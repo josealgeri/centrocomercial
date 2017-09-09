@@ -9,7 +9,7 @@
 <jsp:body>
 <div>
 	<ol class="breadcrumb">
-		<li><a href="/"><i class="fa fa-home"></i> início</a></li>
+		<li><a href="/centrocomercial/"><i class="fa fa-home"></i> início</a></li>
 		<li class="active"><i class="fa fa-table"></i> Lista de Categorias</li>
 	</ol>
 </div>

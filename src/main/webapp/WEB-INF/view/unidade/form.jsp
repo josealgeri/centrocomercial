@@ -9,8 +9,8 @@
 	
 <div>
 	<ol class="breadcrumb">
-		<li><a href="/"><i class="fa fa-home"></i> Início</a></li>
-		<li><a href="/unidade/"><i class="fa fa-table"></i> Lista de Unidades de Medida</a></li>
+		<li><a href="/centrocomercial/"><i class="fa fa-home"></i> Início</a></li>
+		<li><a href="/centrocomercial/unidade/"><i class="fa fa-table"></i> Lista de Unidades de Medida</a></li>
 		<li class="active"><i class="fa fa-edit"></i> Cadastro de unidades de Medida</li>
 	</ol>
 </div>

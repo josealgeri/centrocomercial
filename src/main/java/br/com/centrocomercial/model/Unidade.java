@@ -30,7 +30,7 @@ public class Unidade implements Serializable {
 	@Column(length = 45, nullable = false)
 	private String descricao;
 	
-	@Column(length = 2, nullable = false)
+	@Column(length = 2, nullable = true)
 	private String flaginativo;
 	
 }
