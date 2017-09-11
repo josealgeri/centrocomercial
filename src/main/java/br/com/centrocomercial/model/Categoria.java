@@ -17,13 +17,14 @@ public class Categoria implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "idcategoria",unique=true, nullable = false)
 	private Long idcategoria;
 
 	@Column(length = 45, nullable = false)
 	private String descricao;
 	
-	@Column(length = 1, nullable = true)
+	@Column(length = 1,nullable = false)
 	private String flaginativo;
 	
 	public Categoria() {

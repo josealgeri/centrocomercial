@@ -130,14 +130,14 @@
 										class="fa fa-angle-left pull-right"></i>
 								</span> </a>
 								<ul class="treeview-menu">
-									<li><a href="#"><i class="fa fa-circle-o"></i>Produto</a></li>
+									<li><a href="<c:url value="/produto/"/>"><i class="fa fa-circle-o"></i>Produto</a></li>
 									<li><a href="<c:url value="/unidade/"/>"><i class="fa fa-circle-o"></i>Unidades de Medida</a></li>
 									<li><a href="<c:url value="/categoria/"/>"><i class="fa fa-circle-o"></i>Categoria</a></li>
 									<li><a href="#"><i class="fa fa-circle-o"></i>Complementares<span class="pull-right-container"> <i
 												class="fa fa-angle-left pull-right"></i>
 										</span> </a>
 										<ul class="treeview-menu">
-											<li><a href="#"><i class="fa fa-circle-o"></i>Complementos do <p/>Produto</a></li>
+											<li><a href="#"><i class="fa fa-circle-o"></i>Complementos do Produto</a></li>
 											<li><a href="#"><i class="fa fa-circle-o"></i>Locais de Estoque</a></li>
 										</ul></li>
 								</ul></li>
